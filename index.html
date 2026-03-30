@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahez Education | جاهز للتعليم</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<section class="leader-section" id="about">
+    <div class="leader-container">
+        
+        <div class="leader-image-wrapper" data-aos="fade-right">
+            <img src="657417782_1278147387764851_553612499466642739_n.jpg" alt="الأستاذة مروة حسن" class="leader-img">
+        </div>
+        
+        <div class="leader-text">
+            <h3>أ/ مروة حسن أحمد</h3>
+            <div class="typewriter-container">
+                <span class="typewriter-text" id="leader-desc"></span>
+                <span class="cursor">|</span> </div>
+        </div>
+    </div>
+</section>
+    <style>
+        /* تنسيق قسم التعريف الجديد */
+.leader-section {
+    padding: 80px 10%;
+    background: linear-gradient(to top, #0a0a0a, var(--royal-black));
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.leader-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* الصورة على اليمين والنص على اليسار */
+    gap: 50px;
+    align-items: center;
+}
+
+.leader-image-wrapper {
+    text-align: center;
+}
+
+.leader-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* صورة دائرية */
+    border: 5px solid var(--matte-gold);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+
+.leader-text h3 {
+    font-size: 2.2rem;
+    color: var(--matte-gold);
+    margin-bottom: 20px;
+    display: inline-block;
+    border-bottom: 2px solid var(--matte-gold);
+    padding-bottom: 5px;
+}
+
+.typewriter-container {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.8;
+    min-height: 100px; /* الحفاظ على المساحة حتى أثناء الكتابة */
+}
+
+/* تنسيق المؤشر (Cursor) */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: var(--matte-gold);
+    margin-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* تحسينات للموبايل */
+@media (max-width: 768px) {
+    .leader-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .leader-text h3 { font-size: 1.8rem; }
+}
+        :root {
+            --royal-black: #000000;
+            --deep-purple: #2D033B;
+            --matte-gold: #D4AF37;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --transition: all 0.4s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Tajawal', sans-serif; }
+        body { background-color: var(--royal-black); color: #ffffff; overflow-x: hidden; line-height: 1.6; }
+
+        header {
+            position: sticky; top: 0; z-index: 1000; padding: 1rem 5%;
+            background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 900; color: var(--matte-gold); text-decoration: none; }
+        nav a { color: #fff; text-decoration: none; margin-right: 2rem; transition: var(--transition); }
+        nav a:hover { color: var(--matte-gold); }
+
+        .pill-title {
+            display: inline-block; padding: 8px 25px; border: 2px solid var(--matte-gold);
+            border-radius: 50px; color: var(--matte-gold); font-size: 0.8rem; font-weight: bold; margin-bottom: 1.5rem;
+        }
+
+        section { padding: 80px 10%; }
+        .hero {
+            height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; background: radial-gradient(circle at center, var(--deep-purple) 0%, var(--royal-black) 100%);
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; background: linear-gradient(to bottom, #fff, var(--matte-gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 40px; }
+        
+        .card {
+            background: var(--glass-bg); padding: 35px; border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: var(--transition); cursor: pointer; text-align: center;
+        }
+        .card:hover { border-color: var(--matte-gold); transform: translateY(-10px); background: rgba(212, 175, 55, 0.05); }
+
+        .cta-btn {
+            padding: 12px 30px; background: var(--matte-gold); color: var(--royal-black);
+            border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: var(--transition); text-decoration: none; display: inline-block;
+        }
+        .cta-btn:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+
+        /* النوافذ المنبثقة */
+        .modal {
+            display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95); backdrop-filter: blur(15px); overflow-y: auto;
+        }
+        .modal-content {
+            background: #0a0a0a; margin: 3% auto; padding: 40px; border: 1px solid var(--matte-gold);
+            width: 90%; max-width: 900px; border-radius: 25px; position: relative;
+        }
+        .close-btn { position: absolute; top: 20px; left: 20px; color: var(--matte-gold); font-size: 30px; cursor: pointer; }
+
+        .feature-box { background: rgba(255,255,255,0.03); padding: 20px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.1); text-align: center; }
+        .feature-box i { font-size: 1.8rem; color: var(--matte-gold); margin-bottom: 10px; }
+
+        input, select { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: 1px solid #333; background: #1a1a1a; color: #fff; }
+        
+        @media (max-width: 768px) { .hero h1 { font-size: 2.2rem; } nav { display: none; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">جاهز | JAHEZ</a>
+        <nav>
+            <a href="#about">عن المنصة</a>
+            <a href="#courses">أقسامنا</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div data-aos="zoom-in">
+            <span class="pill-title">بقيادة مروة حسن أحمد</span>
+            <h1>Jahez Education</h1>
+            <p>نحن لا نقدم دروساً فقط، نحن نصنع مساراً للتميز.</p>
+            <br>
+            <button class="cta-btn" onclick="openRegistration('استفسار عام')">ابدأ رحلتك الآن</button>
+        </div>
+    </section>
+
+    <section id="courses">
+        <div style="text-align: center;"><span class="pill-title">خدماتنا التعليمية</span><h2>اختر مسار تفوقك</h2></div>
+        
+        <div class="grid-container">
+            <div class="card" data-aos="fade-up" onclick="openModal('academicModal')">
+                <i class="fas fa-user-graduate" style="font-size: 2.5rem; color: var(--matte-gold); margin-bottom: 15px;"></i>
+                <h3>التعليم الأكاديمي</h3>
+                <p>تأسيس مبتكر لجميع المراحل الدراسية.</p>
+                <p style="color:var(--matte-gold); font-size: 0.8rem; margin-top: 10px;">اضغطي للتفاصيل <i class="fas fa-chevron-left"></i></p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="100" onclick="openModal('graphicModal')">
+                <i class="fas fa-palette" style="font-size: 2.5rem; color: var(--matte-gold); margin-bottom: 15px;"></i>
+                <h3>أكاديمية الجرافيك</h3>
+                <p>تعلم فنون التصميم الإبداعي من الصفر.</p>
+                <p style="color:var(--matte-gold); font-size: 0.8rem; margin-top: 10px;">اضغطي للتفاصيل <i class="fas fa-chevron-left"></i></p>
+            </div>
+
+            <div class="card" data-aos="fade-up" data-aos-delay="200" onclick="openModal('characterModal')">
+                <i class="fas fa-crown" style="font-size: 2.5rem; color: var(--matte-gold); margin-bottom: 15px;"></i>
+                <h3>بناء الشخصية</h3>
+                <p>صناعة قادة المستقبل بمهارات حياتية حقيقية.</p>
+                <p style="color:var(--matte-gold); font-size: 0.8rem; margin-top: 10px;">اضغطي للتفاصيل <i class="fas fa-chevron-left"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="academicModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('academicModal')">&times;</span>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span class="pill-title">نظام تعليمي متكامل</span>
+                <h2 style="color: var(--matte-gold);">لماذا جاهز هي اختيارك الأول؟</h2>
+            </div>
+            <div class="grid-container" style="margin-top: 0;">
+                <div class="feature-box"><i class="fas fa-chess-knight"></i><h4>تأسيس بطرق مميزة</h4><p>خرائط ذهنية وأساليب ربط مبتكرة تجعل المعلومة تثبت بسهولة.</p></div>
+                <div class="feature-box"><i class="fas fa-sync-alt"></i><h4>محتوى متجدد</h4><p>ملازم وتدريبات أسبوعية تواكب أحدث التعديلات الوزارية.</p></div>
+                <div class="feature-box"><i class="fas fa-tags"></i><h4>عروض وباقات</h4><p>خصومات خاصة للإخوة وعروض شهرية على المراجعات.</p></div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="cta-btn" onclick="openRegistration('التعليم الأكاديمي')">سجل بياناتك في الأكاديمية</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="graphicModal" class="modal">
+        <div class="modal-content">
+            <div id="eServicesModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('eServicesModal')">&times;</span>
+        <div style="text-align: center; margin-bottom: 30px;">
+            <span class="pill-title">بوابة المستقبل الرقمي</span>
+            <h2 style="color: var(--matte-gold);">الخدمات الإلكترونية والتقنية</h2>
+            <p>حلول متكاملة تجمع بين الفن والتكنولوجيا لتلبية احتياجات سوق العمل.</p>
+        </div>
+        <div class="grid-container" style="margin-top: 0;">
+            <div class="feature-box">
+                <i class="fas fa-palette"></i>
+                <h4>جرافيك وسوشيال ميديا</h4>
+                <p>احتراف تصميمات السوشيال ميديا، الهوية البصرية، وتجهيز الملفات للطباعة بدقة.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-magic"></i>
+                <h4>تحويل النص لإعلان</h4>
+                <p>تعلم كيف تكتب محتوى إعلاني (Copywriting) يحول القارئ لعميل.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-robot"></i>
+                <h4>فيديو بالنصوص (AI)</h4>
+                <p>تحويل النصوص إلى فيديوهات احترافية وإعلانات مذهلة باستخدام أدوات الذكاء الاصطناعي.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="cta-btn" onclick="openRegistration('الخدمات الإلكترونية الشاملة')">سجل الآن في الخدمات الإلكترونية</button>
+        </div>
+    </div>
+</div>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <span class="pill-title">فنون التصميم الرقمي</span>
+                <div class="card" data-aos="fade-up" data-aos-delay="100" onclick="openModal('eServicesModal')">
+    <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: var(--matte-gold); margin-bottom: 15px;"></i>
+    <h3>الخدمات الإلكترونية الشاملة</h3>
+    <p>من التصميم التقليدي إلى أحدث تقنيات الـ AI والطباعة.</p>
+    <p style="color:var(--matte-gold); font-size: 0.8rem; margin-top: 10px;">اضغطي للتفاصيل <i class="fas fa-chevron-left"></i></p>
+</div>
+            <div style="text-align: center; margin-top: 30px;">
+                <button class="cta-btn" onclick="openRegistration('أكاديمية الجرافيك')">سجل في دفعة الجرافيك</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="characterModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('characterModal')">&times;</span>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span class="pill-title">رحلة صناعة الإنسان</span>
+                <h2 style="color: var(--matte-gold);">أكاديمية بناء الذات</h2>
+                <p>نحن نهتم بما تحمله في عقلك وقلبك، وليس فقط في حقيبتك المدرسية.</p>
+            </div>
+            <div class="grid-container" style="margin-top: 20px;">
+                <div class="feature-box" style="border: 1px solid #4e1a5e;">
+                    <i class="fas fa-mosque"></i>
+                    <h4>أمور دينك ودنياك</h4>
+                    <p>فهم أصول الدين بوسطية تعينك على النجاح.</p>
+                    <button class="cta-btn" style="margin-top:10px; font-size:0.8rem;" onclick="openRegistration('شخصية - ديني ودنيوي')">تسجيل</button>
+                </div>
+                <div class="feature-box" style="border: 1px solid #4e1a5e;">
+                    <i class="fas fa-fire"></i>
+                    <h4>تحديات "جاهز"</h4>
+                    <p>تحديات أسبوعية لتعزيز الانضباط والارادة.</p>
+                    <button class="cta-btn" style="margin-top:10px; font-size:0.8rem;" onclick="openRegistration('شخصية - تحديات')">تسجيل</button>
+                </div>
+                <div class="feature-box" style="border: 1px solid #4e1a5e;">
+                    <i class="fas fa-heart"></i>
+                    <h4>الذكاء العاطفي</h4>
+                    <p>فهم المشاعر وبناء علاقات اجتماعية ناجحة.</p>
+                    <button class="cta-btn" style="margin-top:10px; font-size:0.8rem;" onclick="openRegistration('شخصية - ذكاء عاطفي')">تسجيل</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="regModal" class="modal">
+        <div class="modal-content" style="max-width: 450px; border-top: 5px solid var(--matte-gold);">
+            <span class="close-btn" onclick="closeModal('regModal')">&times;</span>
+            <h2 style="text-align: center; color: var(--matte-gold); margin-bottom: 15px;">استمارة الانضمام</h2>
+            <form id="jahezForm" onsubmit="handleFormSubmit(event)">
+                <input type="text" id="userName" placeholder="الاسم بالكامل" required>
+                <input type="tel" id="userPhone" placeholder="رقم الواتساب" required>
+                <select id="userGrade"><option>ابتدائي</option><option>إعدادي</option><option>ثانوي</option><option>أخرى</option></select>
+                <input type="text" id="selectedTrack" readonly style="background: #222; color: #aaa;">
+                <button type="submit" id="submitBtn" class="cta-btn" style="width: 100%; margin-top: 15px;">إرسال البيانات</button>
+            </form>
+            <div id="successMsg" style="display: none; text-align: center; padding: 20px; color: #25D366;">
+                <i class="fas fa-check-circle" style="font-size: 3rem; margin-bottom: 10px;"></i>
+                <h3>تم التسجيل بنجاح!</h3>
+                <p>سيتم التواصل معكِ قريباً.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        function openModal(id) { document.getElementById(id).style.display = "block"; document.body.style.overflow = "hidden"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; document.body.style.overflow = "auto"; }
+
+        function openRegistration(trackName) {
+            closeModal('academicModal'); closeModal('graphicModal'); closeModal('characterModal');
+            document.getElementById('selectedTrack').value = trackName;
+            openModal('regModal');
+        }
+
+        window.onclick = function(event) { if (event.target.className === 'modal') { closeModal(event.target.id); } }
+
+        async function handleFormSubmit(event) {
+            event.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwHNZdgH3u1XZjaue_jk18DlIGwO3JC-e4Lz3bqxec8xUoo7nwH7NkJawZYKSVPA1HEEw/exec';
+
+            const formData = {
+                name: document.getElementById('userName').value,
+                phone: document.getElementById('userPhone').value,
+                grade: document.getElementById('userGrade').value,
+                track: document.getElementById('selectedTrack').value
+            };
+
+            btn.innerText = "جاري الحفظ... ⏳";
+            btn.disabled = true;
+
+            try {
+                await fetch(scriptURL, { method: 'POST', mode: 'no-cors', body: JSON.stringify(formData) });
+                document.getElementById("jahezForm").style.display = "none";
+                document.getElementById("successMsg").style.display = "block";
+                setTimeout(() => {
+                    closeModal('regModal');
+                    event.target.reset();
+                    document.getElementById("jahezForm").style.display = "block";
+                    document.getElementById("successMsg").style.display = "none";
+                    btn.innerText = "إرسال البيانات";
+                    btn.disabled = false;
+                }, 3000);
+            } catch (error) {
+                alert("حدث خطأ، يرجى المحاولة لاحقاً.");
+                btn.disabled = false;
+            }
+        }
+        // مصفوفة النصوص التي سيتم كتابتها تلقائياً
+const leaderText = `مؤسسة وقائدة منصة جاهز للتعليم. شغفي هو تبسيط العلم وتذليل الصعاب أمام الطلاب، لأصنع منهم جيلاً واعياً، طموحاً، وجاهزاً لمستقبل مشرق. أؤمن أن خلف كل طالب عظيم، إرادة فولاذية وتوجيه صحيح، وهذا ما نقدمه هنا في جاهز.`;
+
+const textTarget = document.getElementById('leader-desc');
+const typingSpeed = 50; // سرعة الكتابة بالمللي ثانية
+
+let charIndex = 0;
+let isTyping = false;
+
+// دالة الكتابة حرفاً بحرف
+function typeEffect() {
+    if (charIndex < leaderText.length) {
+        textTarget.textContent += leaderText.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect, typingSpeed);
+    }
+}
+
+// دالة لمراقبة متى يصل المستخدم للقسم لتشغيل التأثير مرة واحدة
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !isTyping) {
+            isTyping = true;
+            typeEffect(); // ابدأ الكتابة
+            sectionObserver.unobserve(entry.target); // توقف عن المراقبة بعد العمل
+        }
+    });
+}, { threshold: 0.5 }); // سيعمل عندما يظهر 50% من القسم
+
+// ابدأ مراقبة القسم الجديد
+sectionObserver.observe(document.getElementById('about'));
+    </script>
+</body>
+</html>
